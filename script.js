@@ -39,5 +39,15 @@ console.log(resultado);
 let posicao = lista3.findIndex((item) => item === '🤡')
 console.log(posicao);*/
 
-lista3.fill('🐸');
-console.log(lista3);
+//1 = quantidade de vezes que ele vai pular antes de preencher os elementos
+//lista3.fill('🐸', 1);
+//console.log(lista3);
+
+//saber se tem '🐸' na lista, a resposta vai ser true or false
+let resultado = lista3.some((item) => item === '🐸');
+console.log(resultado);
+resultado = lista3.some((item) => item === '🤡');
+
+//saber se todos os elementos que tem na lista são 🤡
+resultado = lista3.every((item) => item === '🤡');
+console.log(resultado)
